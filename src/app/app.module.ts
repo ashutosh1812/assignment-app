@@ -17,8 +17,6 @@ import {SharedModule} from '../shared/shared.module';
     FormsModule,
     SharedModule.forRoot()
   ],
-  providers: [],
-  entryComponents: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
