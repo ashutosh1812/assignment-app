@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import {AlgoliaService} from './algolia.service';
+import {AlgoliaService} from '../shared/algolia.service';
 import { interval } from 'rxjs/internal/observable/interval';
 import { startWith, switchMap } from 'rxjs/operators';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { ModalComponent } from './modal/modal.component';
+import { ModalComponent } from '../shared/modal/modal.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
    title = 'engineer-ai';
    serviceRes = [];
     showModel: boolean = false;
-    modelData: string;
+    titleSearch: string;
 
   private serviceResObservable: Observable<any[]>;
 
